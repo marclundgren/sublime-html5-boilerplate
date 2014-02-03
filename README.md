@@ -30,9 +30,11 @@ That generates:
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title></title>
-            <meta name="description" content="">
+            <title>${1}</title>
+            <meta name="description" content="${2}">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="http://cdn.alloyui.com/2.0.0/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+            <link href="http://cdn.alloyui.com/2.0.0/aui-css/css/bootstrap-responsive.min.css" rel="stylesheet"></link>
 
             <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         </head>
@@ -42,23 +44,21 @@ That generates:
             <![endif]-->
 
             <!-- Add your site or application content here -->
-            <p>Hello world! This is HTML5 Boilerplate.</p>
+            <div class="row-fluid">
+                <h1>Hello world! This is HTML5 Boilerplate with AlloyUI.</h1>
+            </div>
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+            <script src="//cdn.alloyui.com/2.0.0/aui/aui-min.js"></script>
 
-            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
             <script>
-                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                e.src='//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-                ga('create','UA-XXXXX-X');ga('send','pageview');
+                YUI().use('aui-base', function(A) {
+
+                    // Place your AlloyUI code here
+                });
             </script>
         </body>
     </html>
 
-## License 
+## License
 
 [MIT Licensed](http://sloria.mit-license.org/).
